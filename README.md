@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Movie House
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![CI](https://github.com/AlanJuker/Movie-house-web-app/actions/workflows/ci.yml/badge.svg)](https://github.com/AlanJuker/Movie-house-web-app/actions/workflows/ci.yml)
 
-## Available Scripts
+A movie store front-end built with React: browse a catalogue, watch trailers, and
+buy or rent films through a cart that survives page reloads.
 
-In the project directory, you can run:
+**Live demo:** https://movie-house-react.vercel.app
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Home carousel** of featured titles (react-slick)
+- **Catalogue with search** to filter movies by title
+- **Details page** with poster, synopsis, cast and an embedded YouTube trailer
+- **Buy or rent** — separate cart and rental lists, with quantities and rental
+  days adjustable on the checkout page
+- **Persistent cart** stored in `localStorage` through a small `useLocalStorage` hook
+- Confirmation dialogs with SweetAlert2
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stack
 
-### `npm test`
+React 18 · React Router 6 · Material UI 5 · react-slick · react-youtube · SweetAlert2
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Structure
 
-### `npm run build`
+```
+src/
+├── api/          # Context providers for movie and image data (mocked)
+├── hooks/        # useCartItems, useRentalItems, useLocalStorage
+├── containers/   # Pages: Home, Movies, Details, Transaction
+├── components/   # Layout, carousel, search bar, cards, details widgets
+└── config/       # Routes
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Movie data is mocked in `src/api/useMovieApi.jsx`; swapping it for a real API
+(e.g. TMDB) only touches that provider.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Run locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+npm start      # http://localhost:3000
+npm test
+```
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
