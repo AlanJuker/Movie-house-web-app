@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImagesProvider, useImagesApi } from '../api/useImagesApi';
+import { useImagesApi } from '../api/useImagesApi';
 import Carousel from '../components/Home/Carousel/Carousel';
 import { Typography } from '@mui/material';
 

@@ -43,7 +43,6 @@ export const MovieProvider = ({ children }) => {
         year: 2009,
         director: 'James Cameron',
         cast: ['Sam Worthington', 'Zoe Saldana'],
-        trailer: 'https://www.youtube.com/watch?v=31gzqRSGqR8',
         price: 19.99,
         rentPrice: 6.99,
         trailer: 'https://www.youtube.com/watch?v=Dydmpfo68DA'
@@ -57,7 +56,6 @@ export const MovieProvider = ({ children }) => {
         year: 2009,
         director: 'James Cameron',
         cast: ['Sam Worthington', 'Zoe Saldana'],
-        trailer: 'https://www.youtube.com/watch?v=31gzqRSGqR8',
         price: 19.99,
         rentPrice: 6.99,
         trailer: 'https://www.youtube.com/watch?v=6xJptj7AVSA'
@@ -71,7 +69,6 @@ export const MovieProvider = ({ children }) => {
         year: 2009,
         director: 'James Cameron',
         cast: ['Sam Worthington', 'Zoe Saldana'],
-        trailer: 'https://www.youtube.com/watch?v=31gzqRSGqR8',
         price: 19.99,
         rentPrice: 6.99,
         trailer: 'https://www.youtube.com/watch?v=gJP2QblqLA0'
@@ -98,7 +95,6 @@ export const MovieProvider = ({ children }) => {
         year: 2009,
         director: 'James Cameron',
         cast: ['Sam Worthington', 'Zoe Saldana'],
-        trailer: 'https://www.youtube.com/watch?v=31gzqRSGqR8',
         price: 19.99,
         rentPrice: 6.99,
         trailer: 'https://www.youtube.com/watch?v=4CpKulS9h88'
@@ -112,7 +108,6 @@ export const MovieProvider = ({ children }) => {
         year: 2009,
         director: 'James Cameron',
         cast: ['Sam Worthington', 'Zoe Saldana'],
-        trailer: 'https://www.youtube.com/watch?v=31gzqRSGqR8',
         price: 19.99,
         rentPrice: 6.99,
         trailer: 'https://www.youtube.com/watch?v=Tl7rtMiOrvY'
@@ -126,7 +121,6 @@ export const MovieProvider = ({ children }) => {
         year: 2009,
         director: 'James Cameron',
         cast: ['Sam Worthington', 'Zoe Saldana'],
-        trailer: 'https://www.youtube.com/watch?v=31gzqRSGqR8',
         price: 19.99,
         rentPrice: 6.99,
         trailer: 'https://www.youtube.com/watch?v=VvSrHIX5a-0'

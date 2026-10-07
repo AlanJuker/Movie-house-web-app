@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Grid, Button } from '@mui/material';
 import { useMovieApi } from '../../api/useMovieApi';
@@ -17,7 +17,7 @@ const DetailsPage = () => {
   const { addToCart } = useCartItems();
   const { addToRental } = useRentalItems();
   const selectedMovie = movies.find((movie) => movie.id === parseInt(id, 10));
-  const [rentalDays, setRentalDays] = useState(1); 
+  const rentalDays = 1;
 
   if (!selectedMovie) {
     return <div>Movie not found</div>;

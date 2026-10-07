@@ -1,9 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import useCartItems from '../../hooks/useCartItems';
 import useRentalItems from '../../hooks/useRentalItems';
 import {
-  Button,
   Card,
   CardContent,
   IconButton,
@@ -20,7 +18,6 @@ import './TransactionPage.css';
 const TransactionPage = () => {
   const { cartItems, addToCart, removeFromCart, adjustQuantity } = useCartItems();
   const { rentalItems, addToRental, removeFromRental, adjustRentalDays } = useRentalItems();
-  const navigate = useNavigate();
 
   const handleRemoveFromCart = (item) => {
     Swal.fire({
