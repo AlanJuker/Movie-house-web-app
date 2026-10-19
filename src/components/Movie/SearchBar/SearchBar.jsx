@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InputBase, IconButton, Paper } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import { Search as SearchIcon } from '@mui/icons-material';
 import './SearchBar.css'; 
 
 const SearchBar = ({ onSearch }) => {

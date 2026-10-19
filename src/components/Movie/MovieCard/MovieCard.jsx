@@ -17,7 +17,7 @@ const MovieCard = ({ pelicula }) => {
           <div className="movie-image">
             <CardMedia
               component="img"
-              src={process.env.PUBLIC_URL + pelicula.poster_path}
+              src={pelicula.poster_path}
               alt={pelicula.title}
             />
           </div>

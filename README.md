@@ -19,7 +19,7 @@ buy or rent films through a cart that survives page reloads.
 
 ## Stack
 
-React 18 · React Router 6 · Material UI 5 · react-slick · react-youtube · SweetAlert2
+React 18 · Vite · React Router 6 · Material UI 5 · react-slick · react-youtube · SweetAlert2 · Vitest
 
 ## Structure
 
@@ -39,7 +39,7 @@ Movie data is mocked in `src/api/useMovieApi.jsx`; swapping it for a real API
 
 ```bash
 npm install
-npm start      # http://localhost:3000
+npm run dev    # http://localhost:5173
 npm test
 ```
 

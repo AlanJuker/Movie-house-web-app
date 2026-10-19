@@ -8,9 +8,9 @@ import {
   List,
   Typography,
 } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
+import { Delete as DeleteIcon } from '@mui/icons-material';
+import { Add as AddIcon } from '@mui/icons-material';
+import { Remove as RemoveIcon } from '@mui/icons-material';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import './TransactionPage.css'; 
