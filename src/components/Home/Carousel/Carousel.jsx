@@ -1,8 +1,11 @@
 import React from 'react';
-import Slider from 'react-slick';
+import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.css'; 
+
+// react-slick is CommonJS; Vite's production bundle hands back { default: Slider }
+const Slider = SlickSlider.default ?? SlickSlider;
 
 const Carousel = ({ carouselImages }) => {
   const settings = {
